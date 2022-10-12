@@ -1,0 +1,25 @@
+---
+output: html_document
+---
+
+<!-- create wrapup.html -->
+
+#### Additional Coverage from *Analytical Chemistry 2.0*
+
+You can learn more about UV/Vis scanning spectrometers in Chapter 10 of Analytical Chemistry 2.1, which you can access using this [link](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_(Harvey)/10%3A_Spectroscopic_Methods). See in particular Sections 10.1 and 10.3. You can learn more about the relationship between absorbance and transmittance in Chapter 10 of Analytical Chemistry 2.1, which you can access using this [link](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_(Harvey)/10%3A_Spectroscopic_Methods). See in particular Section 10.2.
+
+#### Notes on the Spectra in this Unit
+
+The spectra in this unit (97 in all) were recorded in the early 1990s on a Perkin-Elmer Lambda B4 spectrometer, a scanning double-beam instrument acquired in 1987. This particular instrument did not save data in a permanent electronic form; instead, spectra were stored as printouts. For this project, the printouts were scanned and saved as pdf files, which were then cropped in Apple Preview and exported as .png images. Finally, these image files were digitized using  WebPlotDigitizer (Version 4.5), written by Ankit Rohatgi and available [here](https://automeris.io/WebPlotDigitizer).
+
+#### Scanning Takes Time!
+
+Many of the UV/Vis spectrometers you will use are not scanning instruments. Instead, they use a photodiode array detector that allows for the simultaneous measurement of absorbance at, typically, 512, 1024, or 2048 individual wavelengths. Because the measurements are made at the same time, a full spectrum is obtained in less than a second. Obtaining a spectrum using a scanning monochromator, however, requires more time. To get a feel for this, watch the movie on the right that shows the recording of a spectrum at a scan rate of 20 nm/min.
+
+#### Other Modules in Analytical Chemistry 3.0
+
+The following modules provide coverage of related topics: 
+
+* Beer's law
+* signal-to-noise-ratio
+* slit widths and resolution

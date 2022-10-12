@@ -1,0 +1,16 @@
+---
+output: html_document
+---
+
+<!-- create activity3.html -->
+There are 96 possible combinations of slit widths, response times, and scan rates, which is too many to allow for easy comparisons. The three sets of spectra in this activity will guide you in considering how the slit width (sw), the response time (rt), and the scan rate (sr) affect the absorbance spectrum for benzene in methanol by focusing on one parameter at a time. Use the pop-up menu to retrieve a set of spectra. The standard spectrum (dashed, magenta line) is overlaid on each experimental spectrum (solid, blue line). 
+
+1. The first set of spectra differ only in their slit widths. Using too small of a slit width results in a noisy spectrum, but using too wide of a slit width reduces the main peak's absorbance. Explain why these observations are reasonable given that a wider slit increases the amount of light that reaches the detector and increases the range of wavelengths that pass through the monochomator. For the former, you will find it useful to know that absorbance, $A$, is a logarithmic function of transmittance, $T$, and that transmittance is a ratio of the amount of light that passes through the sample, $P_T$, to the amount of light from the source, $P_0$
+
+$$A = -\log T = - \log \left( \frac{P_T}{P_0} \right)$$
+
+2. The second set of spectra differ only in their response times. Increasing the response time removes some of the noise, but increasing the response too much distorts the spectrum. Explain why these observations are reasonable given that the response time is a measure of how long it takes the spectrometer to respond to a change in absorbance.
+
+3. The third set of spectra differ only in their scan rates. In general, the scan rate has little affect on the spectrum except for high scan rates where there is a reduction in absorbance. Explain why the absorbance is relatively insensitive to a change in the scan rate. 
+
+Choosing the best combination of slit width, response time, and scan rate requires a compromise between reducing noise, maintaining accuracy in peak position and peak intensity, and analysis time. Given the data in this activity, what is the best choice of slit width, response time, and scan rate?

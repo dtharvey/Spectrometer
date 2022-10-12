@@ -1,0 +1,17 @@
+---
+output: html_document
+---
+<style type="text/css">
+.main-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<br>
+
+<center>
+Figure 10.1.12 from *Analytical Chemistry 2.1*.
+</center>
+

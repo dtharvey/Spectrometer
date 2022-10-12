@@ -1,0 +1,18 @@
+---
+output: html_document
+---
+<!-- create activity1 html -->
+
+The spectrum on the right is for a sample of benzene (the analyte) dissolved in methanol (the solvent). It was collected using a spectrometer with a slit width of 1.0 nm, a response time of 0.3 s, and a scan rate of 5.0 nm/min. In the remaining activities you will use this as the standard spectrum against which you can judge how the choice of slit width, response time, and scan rate affects a sample's spectrum. 
+
+1. How many peaks are in this spectrum? In what ways are the peaks similar to each other and in what ways are they different from each other?
+
+2. An absorbance peak is characterized by three values: its position along the wavelength axis (in nanometers), its height along the absorbance axis (in arbitrary units, which is a fancy way of saying that absorbance is a unitless number), and its width at half-height (in nanometers). For the most intense peak in this spectrum, use the sliders below the spectrum to determine the wavelength for the peak's maximum absorbance, the value of that absorbance, and the peak's width at half-height.
+
+3. For what range of wavelengths does the spectrum show the greatest amount of noise? 
+
+4. Given the scan rate of 5 nm/min, how many seconds did it take to record this spectrum?
+
+5. The instrument's response time for this spectrum is 0.3 s. Given the scan rate of 5.0 nm/min, by how much has the monochromator advanced during this time?
+
+After answering these questions, move on to the next activity where you will explore how the choice of slit width, response time, and scan rate affects the UV spectrum for benzene. 

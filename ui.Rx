@@ -1,0 +1,42 @@
+# user interface
+
+library(shiny)
+
+ui = fluidPage(
+  titlePanel(title = "scanning monochromator"),
+    fluidRow(
+      column(width = 6,
+      wellPanel(
+        
+        radioButtons("slitwidth",
+         label = "slit width (nm)",
+         selected = 1,
+         inline = TRUE,
+         choiceNames = c("0.25", "1.0", "2.0", "4.0"),
+         choiceValues = c(1,2,3,4)),
+        
+        radioButtons("response",
+         label = "response time (s)",
+         selected = 1,
+         inline = TRUE,
+         choiceNames = c("0.10", "0.50", "2.0", "10.0"),
+         choiceValues = c(1,2,3,4)),
+        
+        radioButtons("scanrate",
+         label = "scan rate (nm/min)",
+         selected = 1,
+         inline = TRUE,
+         choiceNames = c("10", "20", "60", "120","300", "750"),
+         choiceValues = c(1,2,3,4,5,6)),
+        
+        checkboxInput("show_std", 
+                      label = "overlay standard spectrum", 
+                      value = TRUE),
+        
+        includeHTML("instructions.html")
+      )),
+       
+        column(width = 6,
+          plotOutput("spectrum")
+        )
+))
