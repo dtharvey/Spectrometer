@@ -1,6 +1,8 @@
 # Spectrometer
- shiny app to explore how slit width, response time, and scan rate affect recorded spectrum
+A multi-page application in a more active-learning format that explores the effect of slit width, response time, and scan rate on a UV absorbance spectrum. The application uses a database that contains 97 spectra of benzene dissolved in cyclohexane.
 
-library(shiny)
+to run locally, enter the following two lines into the console
 
-shiny::runGitHub("Spectrometer","dtharvey")
+ library(shiny)
+
+ shiny::runGitHub("Spectrometer","dtharvey")
