@@ -1,0 +1,14 @@
+name: Spectrometer
+title: Spectrometer
+username:
+account: dthdpu
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7380423
+bundleId: 6427481
+url: https://dthdpu.shinyapps.io/Spectrometer/
+when: 1666368277.37662
+lastSyncTime: 1666368277.37663
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: activity1.Rmd|activity2.Rmd|activity3.Rmd|introduction.Rmd|plotly_test.R|question1.html|question1.Rmd|README.md|resources.html|scanning.R|server_plotly.R|spec_fig_cap.html|spec_fig_cap.Rmd|testcode.R|ui_plotly.R|ui.Rx|wrapup.Rmd

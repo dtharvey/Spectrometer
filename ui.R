@@ -1,10 +1,10 @@
-# user interface
+# user interface for spectrometer
 
 library(shiny)
 library(shinythemes)
 
 ui = navbarPage("AC 3.0: Scanning Monochromator",
-                theme = shinytheme("cosmo"),
+                theme = shinytheme("journal"),
                 tags$head(
                   tags$link(rel = "stylesheet", 
                             type = "text/css", 
@@ -101,7 +101,9 @@ ui = navbarPage("AC 3.0: Scanning Monochromator",
              wellPanel(
                selectInput("questionnumber", 
                            label = NULL, 
-                           choices = c("Set 1", "Set 2","Set 3"))
+                           choices = c("Set 1: Slit Width", 
+                                       "Set 2: Response Time",
+                                       "Set 3: Scan Rate"))
              ),
              plotOutput("questionspectra", height = "650px")
              ) # close column

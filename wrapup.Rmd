@@ -15,11 +15,3 @@ The spectra in this unit (97 in all) were recorded in the early 1990s on a Perki
 #### Scanning Takes Time!
 
 Many of the UV/Vis spectrometers you will use are not scanning instruments. Instead, they use a photodiode array detector that allows for the simultaneous measurement of absorbance at, typically, 512, 1024, or 2048 individual wavelengths. Because the measurements are made at the same time, a full spectrum is obtained in less than a second. Obtaining a spectrum using a scanning monochromator, however, requires more time. To get a feel for this, watch the movie on the right that shows the recording of a spectrum at a scan rate of 20 nm/min.
-
-#### Other Modules in Analytical Chemistry 3.0
-
-The following modules provide coverage of related topics: 
-
-* Beer's law
-* signal-to-noise-ratio
-* slit widths and resolution
