@@ -1,0 +1,33 @@
+---
+output: html_document
+---
+
+<!-- The following script makes it possible to use the mhchem -->
+<!-- latex package in a .Rmd file and to knit it into an .html file -->
+<!-- the font size is scaled to 90% to match text -->
+
+```{=html}
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+    extensions: ["[Contrib]/mhchem/mhchem.js"]
+}
+});
+MathJax.Hub.Config({ 
+        "HTML-CSS": { scale: 90 }, 
+        SVG: { linebreaks: { automatic:true } }, 
+ });
+</script>
+```
+
+<!-- text for activity 2 -->
+
+Use the radio buttons to explore how the slit width, the response time, and the scan rate affect the absorbance spectrum for benzene dissolved in cyclohexane. Changing any one variable updates the experimental spectrum. The standard absorbance spectrum---collected using a slit width of 1.0 nm, a response time of 0.5 s, and a scan rate of 5.0 nm/min---is included as an overlay. All spectra were recorded on the same sample.
+
+**Exercise 1.** For each variable, describe how a change in its value affects the spectrum. Consider effects such as the amount of noise in the spectrum, the location of a peak along the *x*-axis, the shape and width of a peak, and the maximum absorbance for a peak. Be sure to explore the interaction between variables; for example, is the effect of a change in slit width different when the response time is set to its largest value (10.0 s) or set to its smallest value (0.1 s)? Give some consideration to how time affects a spectrum, both in terms of scan rate and response time. If you have ideas on why the slit width, the response time, and/or the scan rate affects a spectrum, then jot them down as well.
+
+**Exercise 2.** After you have gathered sufficient data, summarize your observations in the form of a list. Here is an entry to get you started:
+
+* There is more noise, particularly at shorter wavelengths, when the slit width is narrower (0.25 nm) than when it is wider (4.0 nm).
+
+You can use the download button to save a copy of the spectrum---as a spreadsheet in csv format---for any combination of slit width, response time, and scan rate. The file is saved using a filename of `spectrumXYZ.csv` where `X` identifies the slit width `Y` identifies the response time, and `Z` identifies the scan rate using the position of its radio button. For example, if the radio buttons are set to a slit width of 0.25 nm, a response time of 0.50 s, and a scan rate of 60 nm/min, then the file is saved as `spectrum123.csv`.

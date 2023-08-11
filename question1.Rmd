@@ -1,5 +1,0 @@
----
-output: html_document
----
-
-The two spectra for this question differ only in their slit widths. The spectrum using a slit width of 0.25 nm shows a lot of noise; this is true at all wavelengths, although it is more pronounced at shorter wavelengths. For this question, let's consider only that portion of the spectrum where the wavelength is less than 250 nm. Increasing the slit width from 0.25 nm to 1.0 nm reduces the amount of noise. How are $P_T$ and $P_0$ affected by the choice of slit width and why might this affect the amount of noise in the spectrum? 

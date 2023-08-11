@@ -1,0 +1,35 @@
+---
+output: html_document
+---
+
+<!-- The following script makes it possible to use the mhchem -->
+<!-- latex package in a .Rmd file and to knit it into an .html file -->
+<!-- the font size is scaled to 90% to match text -->
+
+```{=html}
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+    extensions: ["[Contrib]/mhchem/mhchem.js"]
+}
+});
+MathJax.Hub.Config({ 
+        "HTML-CSS": { scale: 90 }, 
+        SVG: { linebreaks: { automatic:true } }, 
+ });
+</script>
+```
+
+<!-- text for activity 1 -->
+
+The spectrum on the right is for a sample of benzene dissolved in cyclohexane. It was collected using a spectrometer with a slit width of 1.0 nm, a response time of 0.5 s, and a scan rate of 5.0 nm/min. We will designate this as the standard spectrum against which we can judge how the choice of slit width, response time, and scan rate affects a sample's spectrum. You can use the download button to retrieve the data for the standard spectrum as a spreadsheet in csv format. 
+
+**Exercise 1.** How many peaks are in this spectrum? In what ways are the individual peaks similar to each other and in what ways are they different from each other?
+
+**Exercise 2.** An absorbance peak is characterized by three values: its position along the wavelength axis (in nanometers), its height along the absorbance axis at this position (in arbitrary units, a way of saying that absorbance is a unitless number), and its width at half-height (in nanometers). For the most intense peak in this spectrum, use the available sliders---which control the dashed vertical and horizontal cursors---to determine the wavelength for the peak's maximum absorbance, the value of that absorbance, and the peak's width at half-height.
+
+**Exercise 3.** Over what range of wavelengths does the spectrum show the most noise? 
+
+**Exercise 4.** How many seconds did it take to record this spectrum?
+
+**Exercise 5.** The instrument's response time for this spectrum is 0.5 seconds. By how much will the monochromator advanced during this time?

@@ -1,0 +1,33 @@
+---
+output: html_document
+---
+
+<!-- The following script makes it possible to use the mhchem -->
+<!-- latex package in a .Rmd file and to knit it into an .html file -->
+<!-- the font size is scaled to 90% to match text -->
+
+```{=html}
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+    extensions: ["[Contrib]/mhchem/mhchem.js"]
+}
+});
+MathJax.Hub.Config({ 
+        "HTML-CSS": { scale: 90 }, 
+        SVG: { linebreaks: { automatic:true } }, 
+ });
+</script>
+```
+
+<!-- text for activity 3 -->
+
+There are 96 possible combinations of slit widths, response times, and scan rates on the Exploring Variables panel, which is too many to allow for easy comparisons. By focusing on one variable at a time, the three sets of spectra in this activity will guide you in considering how and why the slit width (sw), the response time (rt), and the scan rate (sr) affect the absorbance spectrum for benzene in cyclohexane. Use the pop-up menu to retrieve a set of spectra. The standard spectrum (dashed line) is overlaid on each experimental spectrum (solid line). 
+
+**Exercise 1.** The first set of spectra differ only in their slit widths. What is the effect on a spectrum when your increase the slit width? Explain why your observations are reasonable given that a wider slit increases the amount of light that reaches the detector and increases the range of wavelengths that pass through the monochomator. For the former, you will find it useful to know that absorbance, $A$, is a logarithmic function of transmittance, $T$, and that transmittance is a ratio of the amount of light that passes through the sample, $P_T$, to the amount of light from the source, $P_0$
+$$A = -\log T = - \log \left( \frac{P_T}{P_0} \right)$$
+**Exercise 2.** The second set of spectra differ only in their response times. What is the effect on a spectrum when you increase the response time? Explain why your observations are reasonable given that the response time is a measure of how long it takes the spectrometer to respond to a change in absorbance.
+
+**Exercise 3.** The third set of spectra differ only in their scan rates. What is the effect on a spectrum when your increase the scan rate? Explain why your observations are reasonable given that the scan rate is a measure of how much time a particular wavelength of light is focused on the monochromator's exit slit. 
+
+**Exercise 4.** Choosing the best combination of slit width, response time, and scan rate requires a compromise between reducing noise, maintaining accuracy in peak position and peak intensity, and a resonable analysis time. Given the data in this activity, what is the best choice of slit width, response time, and scan rate? You may wish to use the Exploring Variables panel to evaluate your choices.

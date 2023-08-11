@@ -1,0 +1,46 @@
+---
+output: html_document
+---
+
+<!-- The following script makes it possible to use the mhchem -->
+<!-- latex package in a .Rmd file and to knit it into an .html file -->
+<!-- the font size is scaled to 90% to match text -->
+
+```{=html}
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+    extensions: ["[Contrib]/mhchem/mhchem.js"]
+}
+});
+MathJax.Hub.Config({ 
+        "HTML-CSS": { scale: 90 }, 
+        SVG: { linebreaks: { automatic:true } }, 
+ });
+</script>
+```
+
+<!-- text for wrapping up -->
+
+#### Notes on the Spectra in this Unit
+
+The 97 spectra in this unit---the 96 possible combinations of slit widths, response times, and scan rates plus the standard spectrum---were recorded in the early 1990s on a Perkin-Elmer Lambda B4 spectrometer, a scanning double-beam instrument acquired in 1987. This particular instrument did not save data in a permanent electronic form; instead, spectra were archived as printouts. For this project, each individual spectrum was scanned and saved as a pdf file. The image in the pdf file was then cropped in Apple Preview and exported as a png image. Finally, each png image file was digitized using [WebPlotDigitizer (Version 4.5)](https://automeris.io/WebPlotDigitizer), written by Ankit Rohatgi, and saved as a spreadsheet in csv format.
+
+#### Another Look at an Instrument's Response Time
+
+Earlier we described the response time as a measure of how long it takes a spectrometer to respond to a change in absorbance and that there is no one agreed upon way to report a spectrometer's response time. For the spectrometer in this module the response time is a measure of how long it takes, in seconds, to reach 98% of the expected absorbance following an instantaneous change in absorbance.
+
+The figure on the upper right provides a more instructive way to think about response time. The *y*-axis shows a signal as recorded by an instrument and the *x*-axis shows time. The initial signal is identified as $S_0$ and it remains constant until it is pulsed to $S_1$ at time $t_0$. An ideal instrument will respond to the applied pulse by instantly changing its measurement of the signal from $S_0$ to $S_1$, as shown by the solid blue line. A real instrument, however, is not ideal and cannot respond instantly to this applied pulse. A useful analogy is a thermometer placed in a glass of ice water, which does not instantly adjust itself to read 0°C as each part of the thermometer immersed in the ice water must equilibrate to the water's temperature, and equilibration takes time. 
+
+The instrument's actual response to the instantaneous change in the signal is shown by the dashed orange line. When the pulse is first applied, the difference between $S_1$ and $S_0$ is large and the rate of change is high. As the signal becomes closer to $S_1$, the rate of change deceases. The change in the signal as a function of time, $S(t)$ is given by the following equation
+$$S(t) = S_1 - (S_1 - S_0) e^{-t/\tau}$$
+where $\tau$ is called the instrument's time constant. When $t = \tau$, the signal has changed by a factor of $1 - \frac{1}{e} = 0.632$ or 63.2% of the difference between $S_0$ and $S_1$; this is shown by the black dot in the figure on the upper right. Defining the response time as that needed to achieve 98% of the difference between $S_0$ and $S_1$ is equivalent to $1- e^{t/\tau} = 0.98$, or $t/\tau \approx 4$, or the equivalent of four time constants.
+
+#### Scanning Takes Time!
+
+Many of the UV/Vis spectrometers you will use are not scanning instruments. Instead, they take advantage of a photodiode array detector that allows for the simultaneous measurement of absorbance at, typically, 512, 1024, or 2048 individual wavelengths. Because the measurements are made at the same time, a full spectrum is obtained in less than a second. Obtaining a spectrum using a scanning monochromator, however, requires more time. To get a feel for this, watch the movie on the lower right that shows the recording of the spectrum of benzene in cyclohexane from 240 nm to 290 nm at a scan rate of 20 nm/min.
+
+#### Additional Resources
+
+You can learn more about UV/Vis scanning spectrometers and the relationship between absorbance and transmittance in [Chapter 10 of Analytical Chemistry 2.1](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_(Harvey)/10%3A_Spectroscopic_Methods), which is available through the [LibreText](https://libretext.org/) project.
+

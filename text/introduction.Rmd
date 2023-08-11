@@ -1,0 +1,33 @@
+---
+output: html_document
+---
+
+<!-- The following script makes it possible to use the mhchem -->
+<!-- latex package in a .Rmd file and to knit it into an .html file -->
+<!-- the font size is scaled to 90% to match text -->
+
+```{=html}
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+    extensions: ["[Contrib]/mhchem/mhchem.js"]
+}
+});
+MathJax.Hub.Config({ 
+        "HTML-CSS": { scale: 90 }, 
+        SVG: { linebreaks: { automatic:true } }, 
+ });
+</script>
+```
+
+<!-- text for introduction -->
+
+The figure on the upper right is an illustration of a scanning monochromator. Light enters through an entrance slit and a collimating mirror focuses it on a diffraction grating that disperses the light based on its wavelength. A focusing mirror directs the light to an exit slit, which then passes it to the detector. Rotating the diffraction grating allows different wavelengths of light to sequentially exit the monochromator; this is what it means to scan a monochromator. 
+
+When using a scanning monochromator to record an absorbance spectrum, the quality of the spectrum is affected by several experimental factors, three of which are covered in this module: the monochromator's slit width, the instrument's response time, and the monochromator's scan rate.
+
+The **slit width** determines the range of wavelengths, $\Delta \lambda$, in nanometers, that exit the monochromator; normally the width of the entrance slit and the exit slit are the same. If the monochromator is set to a wavelength of 250 nm and the exit and the entrance slits have widths of 1.0 nm, then the exit slit passes light with wavelengths between 249 nm and 251 nm with the greatest intensity at 250 nm and with intensity approaching zero at 249 nm and 251 nm. A 1.0 nm slit width does not mean the physical slit is 1.0 nm wide. A slit consists of two metal plates aligned to form a rectangular opening with a width on the scale of millimeters (see photo on lower right, which has a set of four slits). The diffraction grating spreads out the light on the order of 0.1--10 nm per mm; the product of this value and the width of the slit in mm gives the slit width in nm.
+
+The **response time** is a measure of how long it takes the spectrometer to respond to a change in absorbance. There is no one definitive way to report a spectrometer's response time; for the instrument in this module the response time is a measure of how long it takes, in seconds, to reach 98% of its expected absorbance following an instantaneous change in absorbance.
+
+The **scan rate** is a measure of the rate at which the diffraction grating rotates and, therefore, the rate at which light passes over the exit slit in nanometers per minute.
